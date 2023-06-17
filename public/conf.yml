@@ -141,7 +141,7 @@ sections:
         useProxy: true
         options:
           url: >-
-            https://grafana.storagevault.me/d/rYdddlPWk/truenas-scale?orgId=1&viewPanel=77&kiosk&refresh=5s
+            https://haos.storagevault.me/api/hassio_ingress/d/IfgdXjtnk/proxmox-flux?orgId=1&viewPanel=77&kiosk&refresh=5s
           frameHeight: 500
         id: 0_765_iframe
   - name: RAM
