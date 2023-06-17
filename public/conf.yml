@@ -64,7 +64,7 @@ sections:
       - title: Uptime-Kuma
         description: ''
         icon: hl-uptime-kuma
-        url: https://uptime-kuma.storagevault.me
+        url: http://192.168.178.44:3001
         id: 1_1475_uptimekuma
       - title: Plex
         description: ''
@@ -110,37 +110,17 @@ sections:
         icon: hl-router
         url: http://fritz.box/
         id: 0_1599_fritzbox
-      - title: Synology
-        icon: hl-synology
-        url: http://192.168.178.20:5000/
-        id: 1_1599_synology
       - title: Truenas
         icon: hl-truenas
         url: https://nas.storagevault.me
         target: newtab
         id: 2_1599_truenas
-      - title: Traefik
-        icon: hl-traefik
-        url: http://192.168.178.64:9000
-        target: null
-        statusCheckAllowInsecure: true
-        id: 3_1599_traefik
       - title: Portainer
         description: ''
         icon: hl-portainer
-        url: https://192.168.178.49:9443
+        url: https://192.168.178.66:9443
         statusCheckAllowInsecure: true
         id: 4_1599_portainer
-      - title: Prometheus
-        description: ''
-        icon: hl-prometheus
-        url: https://192.168.178.64:10086
-        statusCheckAllowInsecure: true
-        id: 5_1599_prometheus
-      - title: PiHole
-        icon: hl-pihole
-        url: https://192.168.178.64:20720
-        id: 6_1599_pihole
       - title: Syncthing
         icon: hl-syncthing
         url: http://192.168.178.64:20910
@@ -152,7 +132,7 @@ sections:
       - type: iframe
         useProxy: true
         options:
-          url: https://uptime-kuma.storagevault.me/status/homelab
+          url: http://192.168.178.44:3001/status/homelab
           frameHeight: 500
         id: 0_1071_iframe
   - name: CPU Usage
@@ -173,12 +153,3 @@ sections:
             https://grafana.storagevault.me/d/rYdddlPWk/truenas-scale?orgId=1&viewPanel=78&kiosk&refresh=5s
           frameHeight: 500
         id: 0_224_iframe
-  - name: Plex
-    widgets:
-      - type: iframe
-        useProxy: true
-        options:
-          url: >-
-            https://plex.storagevault.me/status/sessions?X-Token=2f4c031948dbfe4ba8355123f6c0b559e0854817
-          frameHeight: 500
-        id: 0_409_iframe
